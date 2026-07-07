@@ -1,0 +1,6 @@
+{
+  "name": "Visal Digital Solutions",
+  "description": "Premium single-page website for Visal Digital Solutions, delivering modern websites, custom UI/UX design, payment gateway integrations, and smart WhatsApp automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
