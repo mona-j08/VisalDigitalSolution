@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }: FooterProps) {
     { name: "Home", id: "home" },
     { name: "Our Services", id: "services" },
     { name: "Why Partner With Us", id: "why-us" },
-    { name: "Free Consultation", id: "contact" },
+    { name: "Contact Us", id: "contact" },
   ];
 
   const services = [
@@ -43,13 +43,13 @@ export default function Footer({ onNavigate }: FooterProps) {
               <Logo inverse />
             </div>
 
-            <p className="text-sm leading-relaxed text-slate-400">
+            <p className="text-sm leading-relaxed text-slate-400 max-w-sm">
               Engineering lightning-fast, high-converting digital architectures, automated replies, and payment systems for companies globally.
             </p>
           </div>
 
           {/* Column 2: Quick Navigation */}
-          <div className="lg:col-span-2.5 lg:col-start-6 space-y-6">
+          <div className="lg:col-span-2 space-y-6">
             <h4 className="font-display font-bold text-sm tracking-widest text-white uppercase">
               Quick Navigation
             </h4>
@@ -68,7 +68,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           </div>
 
           {/* Column 3: Services We Offer */}
-          <div className="lg:col-span-2.5 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
             <h4 className="font-display font-bold text-sm tracking-widest text-white uppercase">
               Digital Services
             </h4>
@@ -99,7 +99,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   href="https://maps.google.com/?q=Vaari+Nagar,+1st+Street,+near+Gowmari+Complex,+Kamayagoundanpatti,+Theni+,+Tamil+Nadu+625521"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors leading-relaxed"
                 >
                   Vaari Nagar, 1st Street, <br />
                   near Gowmari Complex, Kamayagoundanpatti, <br />

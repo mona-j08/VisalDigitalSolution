@@ -86,20 +86,12 @@ export default function Hero({ onNavigate }: HeroProps) {
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto"
           >
             <button
-              id="hero-cta-consultation"
-              onClick={() => onNavigate("contact")}
-              className="font-sans font-semibold text-base bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl transition-all duration-200 shadow-lg shadow-blue-100 hover:shadow-xl hover:shadow-blue-200 hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer"
-            >
-              Get Free Consultation
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-
-            <button
               id="hero-cta-services"
               onClick={() => onNavigate("services")}
-              className="font-sans font-semibold text-base bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 px-8 py-4 rounded-2xl transition-all duration-200 hover:shadow-md flex items-center justify-center gap-2 cursor-pointer"
+              className="font-sans font-semibold text-base bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl transition-all duration-200 shadow-lg shadow-blue-100 hover:shadow-xl hover:shadow-blue-200 hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer"
             >
               View Services
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
           
