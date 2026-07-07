@@ -1,12 +1,9 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Visal Digital Solutions Website
 
-# Run and deploy your AI Studio app
+A modern, responsive website for **Visal Digital Solutions** showcasing digital services like UI/UX Design, Website Development, WhatsApp Bot Automation, Payment Gateway Integration, and App Development.
 
-This contains everything you need to run your app locally.
+Built with a focus on clean design, smooth user experience, and helping small businesses grow digitally.
 
-View your app in AI Studio: https://ai.studio/apps/17b3eb3e-7aad-410d-87ee-3112562e7096
 
 ## Run Locally
 
