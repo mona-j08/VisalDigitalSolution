@@ -6,9 +6,33 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-primary-light: #60a5fa;
-  --color-primary-dark: #1d4ed8;
-  --color-accent-light: #7dd3fc;
+  /* VisalMasterWeb Design System - Primary Palette */
+  --color-primary:        #2C3D47;
+  --color-primary-hover:  #37464E;
+  --color-secondary:      #C31247;
+  --color-secondary-hover:#A22146;
+  --color-accent:         #E98C1A;
+  --color-accent-hover:   #EE9528;
+
+  /* Success / Progress */
+  --color-success:        #759F6F;
+  --color-success-light:  #DCF4D3;
+
+  /* Magic / Decorative */
+  --color-magic:          #CD6D8B;
+  --color-magic-light:    #F5AAC8;
+  --color-magic-soft:     #BA7193;
+
+  /* Backgrounds */
+  --color-bg:             #F8FAFC;
+  --color-bg-secondary:   #EEF2F6;
+  --color-surface:        #FFFFFF;
+  --color-hero-bg:        #F4F7FA;
+
+  /* Text */
+  --color-text:           #1F2937;
+  --color-text-muted:     #4B5563;
+  --color-text-light:     #6B7280;
 }
 
 @layer base {
@@ -16,31 +40,81 @@
     scroll-behavior: smooth;
     font-family: var(--font-sans);
   }
-  
+
   body {
-    background-color: #ffffff;
-    color: #0f172a;
+    background-color: #F8FAFC;
+    color: #1F2937;
     overflow-x: hidden;
+  }
+
+  a {
+    color: #2C3D47;
+    transition: color 0.2s;
+  }
+  a:hover  { color: #C31247; }
+  a:visited{ color: #45565E; }
+
+  ::selection {
+    background-color: #F5AAC8;
+    color: #2C3D47;
   }
 }
 
-/* Custom premium scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* ──────────────────────────────────────────────
+   Scrollbar
+────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 8px; }
+::-webkit-scrollbar-track  { background: #F8FAFC; }
+::-webkit-scrollbar-thumb  { background: #CD6D8B; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #C31247; }
+
+/* ──────────────────────────────────────────────
+   Glow helpers
+────────────────────────────────────────────── */
+.glow-blur { filter: blur(120px); }
+
+/* Primary brand glow */
+.glow-primary {
+  box-shadow: 0 0 32px 0 rgba(44, 61, 71, 0.22);
 }
-::-webkit-scrollbar-track {
-  background: #f8fafc;
+/* Accent gold glow */
+.glow-accent {
+  box-shadow: 0 0 28px 0 rgba(233, 140, 26, 0.30);
 }
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+/* Magic pink glow */
+.glow-magic {
+  box-shadow: 0 0 36px 0 rgba(205, 109, 139, 0.30);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+/* Secondary crimson glow */
+.glow-secondary {
+  box-shadow: 0 0 28px 0 rgba(195, 18, 71, 0.25);
+}
+/* Success green glow */
+.glow-success {
+  box-shadow: 0 0 24px 0 rgba(117, 159, 111, 0.28);
 }
 
-/* Smooth gradient glows */
-.glow-blur {
-  filter: blur(120px);
+/* Pulsing ambient glow orb */
+@keyframes pulse-orb {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50%       { opacity: 0.70; transform: scale(1.06); }
 }
+.animate-pulse-orb { animation: pulse-orb 4s ease-in-out infinite; }
 
+/* Spinning slow ring */
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.animate-spin-slow { animation: spin-slow 14s linear infinite; }
+
+/* Shimmer sweep */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+.text-shimmer {
+  background: linear-gradient(90deg, #2C3D47 30%, #CD6D8B 50%, #E98C1A 70%, #2C3D47 90%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}

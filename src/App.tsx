@@ -31,7 +31,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+    <div className="relative min-h-screen antialiased" style={{ background: "#F8FAFC", color: "#1F2937" }}>
       {/* Sticky Header */}
       <Header onNavigate={handleNavigate} />
 
